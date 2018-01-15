@@ -1,6 +1,6 @@
 # Amazon SageMaker Workshop
 
-Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured and unstructured data.  
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured and unstructured data.  Please complete Module 1, Creating a Notebook Instance, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
 
 ## Prerequisites
 
@@ -16,9 +16,10 @@ We recommend you use the latest version of Chrome to complete this workshop.
 
 ## Modules
 
-This workshop is broken up into multiple modules. You must complete each module before proceeding to the next, however, modules 1 and 2 have AWS CloudFormation templates available that you can use to launch the necessary resources without manually creating them yourself if you'd like to skip ahead.
+This workshop is broken up into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
 
-1. NOTEBOOK 1
+1. Creating a Notebook Instance
+2. NOTEBOOK 1
 2. NOTEBOOK 2
 3. NOTEBOOK 3
 
