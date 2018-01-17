@@ -21,7 +21,7 @@ This workshop is broken up into multiple modules. Module 1 must be completed fir
 1. Creating a Notebook Instance
 2. Video Game Sales Notebook
 3. Stock Price Prediction Notebook
-4. TBD Notebook 
+4. Image Classification Notebook 
 
 After you have completed the workshop you can delete all of the resources that were created by following the instructions at the end of each notebook ( NOTE:  SHOULD WE PROVIDE A CLEANUP GUIDE INSTEAD? ). 
 
@@ -32,7 +32,7 @@ After you have completed the workshop you can delete all of the resources that w
 In this module, we'll work our way through an example Jupyter notebook that demonstrates how to use an Amazon-provided algorithm in SageMaker. More specifically, we'll use SageMaker's version of XGBoost, a popular algorithm that often is useful in working with structured data that might be found in relational databases and flat files. To begin, follow these steps:
 - Download this repository to your computer by clicking 'Clone or download' then 'Download ZIP'.
 - In your notebook instance, click the 'New' button on the right and select 'Folder'.  
-- Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name.
+- Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'video-game-sales'.
 - Click the folder to enter it.
 - To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 - You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
@@ -40,8 +40,14 @@ In this module, we'll work our way through an example Jupyter notebook that demo
 ### Module 3:  Stock Price Prediction Notebook
 
 
-### Module 4:  TBD Notebook
+### Module 4:  Image Classification Notebook
 
+For this module, we'll work with an image classification example notebook.  Follow these steps:
 
+- In your notebook instance, click the 'New' button on the right and select 'Folder'.  
+- Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'image-classification'.
+- Click the folder to enter it.
+- To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+- You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
 
