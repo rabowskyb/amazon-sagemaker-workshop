@@ -30,12 +30,11 @@ After you have completed the workshop you can delete all of the resources that w
 In this module we will start by creating a Jupyter notebook instance in SageMaker where we will run the following two modules.
 
 Launching a Jupyter Notebook Server using Amazon SageMaker
-1.      Sign into the AWS Management Console https://console.aws.amazon.com/.
-2.      In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. SageMaker is available today in N. Virginia, Ohio, Oregon, and Ireland please select from one of these regions.
-3.      Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
+1. Sign into the AWS Management Console https://console.aws.amazon.com/.
+2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. SageMaker is available today in N. Virginia, Ohio, Oregon, and Ireland please select from one of these regions.
+3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
 
-![Services in Console]
-(https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture1.png)
+![Services in Console](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture1.png)
 
 4.      To create a new Jupyter notebook instance, go to Notebook instances, and click the Create notebook instance button at the top of the browser window.
 5.      Type [First Name]-[Last Name]-Lab-Server into the Notebook instance name text box, ml.p2.xlarge into the Notebook instance type.
