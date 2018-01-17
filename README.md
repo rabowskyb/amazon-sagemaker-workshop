@@ -1,6 +1,6 @@
 # Amazon SageMaker Workshop
 
-Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured and unstructured data.  Please complete Module 1, Creating a Notebook Instance, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured and unstructured data.  If possible, please complete Module 1, Creating a Notebook Instance, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
 
 ## Prerequisites
 
@@ -16,69 +16,87 @@ We recommend you use the latest version of Chrome or Firefox to complete this wo
 
 ## Modules
 
-This workshop is broken up into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
+This workshop is divided into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
 
 1. Creating a Notebook Instance
 2. Video Game Sales Notebook
 3. Stock Price Prediction Notebook
 4. Image Classification Notebook 
 
-After you have completed the workshop you can delete all of the resources that were created by following the instructions at the end of each notebook ( NOTE:  SHOULD WE PROVIDE A CLEANUP GUIDE INSTEAD? ). 
+After you have completed the workshop you can delete all of the resources that were created by following the Cleanup Guide provided with this lab guide. 
 
 ### Module 1:  Creating a Notebook Instance
 
-In this module we will start by creating a Jupyter notebook instance in SageMaker where we will run the following two modules.
+In this module we will start by creating a SageMaker notebook instance which we will use to run the following modules.
 
-#### Launching a Jupyter Notebook Server using Amazon SageMaker
+#### Launching the Notebook Instance
 1. Sign into the AWS Management Console https://console.aws.amazon.com/.
-2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. SageMaker is available today in N. Virginia, Ohio, Oregon, and Ireland please select from one of these regions.
+2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
 3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
 
 ![Services in Console](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture1.png)
 
-4. To create a new Jupyter notebook instance, go to Notebook instances, and click the Create notebook instance button at the top of the browser window.
+4. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
 
 ![Notebook Instances](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture2.png)
 
-5. Type [First Name]-[Last Name]-Lab-Server into the Notebook instance name text box, ml.p2.xlarge into the Notebook instance type.
-6. In the resulting modal popup, choose Create a new role, and select None under the S3 Buckets you specify – optional. Click and Create role.
+5. Type [First Name]-[Last Name]-Lab-Server into the Notebook instance name text box, and select ml.p2.xlarge for the Notebook instance type.
+6. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
 
 ![Create IAM role](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture3.png)
 
-7. You will be taken back to the Create Notebook instance page, click Create notebook instance. This will launch a p2.xlarge instance running the Amazon Deep Learning AMI.
+7. You will be taken back to the Create Notebook instance page, click Create notebook instance.
 
-#### Accessing the Jupyter Notebook Instance
+#### Accessing the Notebook Instance
 
 1. Wait for the server status to say InService. This will take a few minutes.
 
 ![Access Notebook](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture4.png)
 
-2. Click Open. You now have access to the Jupyter Notebok.
+2. Click Open. You will now see the Jupyter homepage for your notebook instance.
 
 ![Open Notebook](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture5.png)
 
 
 ### Module 2:  Video Game Sales Notebook
 
-In this module, we'll work our way through an example Jupyter notebook that demonstrates how to use an Amazon-provided algorithm in SageMaker. More specifically, we'll use SageMaker's version of XGBoost, a popular algorithm that often is useful in working with structured data that might be found in relational databases and flat files. To begin, follow these steps:
-- Download this repository to your computer by clicking 'Clone or download' then 'Download ZIP'.
-- In your notebook instance, click the 'New' button on the right and select 'Folder'.  
-- Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'video-game-sales'.
-- Click the folder to enter it.
-- To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
-- You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
+In this module, we'll work our way through an example Jupyter notebook that demonstrates how to use an Amazon-provided algorithm in SageMaker. More specifically, we'll use SageMaker's version of XGBoost, a popular and efficient open-source implementation of the gradient boosted trees algorithm. Gradient boosting is a supervised learning algorithm that attempts to predict a target variable by combining the estimates of a set of simpler, weaker models. XGBoost has done remarkably well in machine learning competitions because it robustly handles a variety of data types, relationships, and distributions. It often is useful, go-to algorithm in working with structured data, such as might be found in relational databases and flat files. 
+
+To begin, follow these steps:
+
+1. Download this repository to your computer by clicking 'Clone or download' then 'Download ZIP'.
+2. In your notebook instance, click the 'New' button on the right and select 'Folder'.  
+3. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'video-game-sales'.
+4. Click the folder to enter it.
+5. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+6. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
 ### Module 3:  Stock Price Prediction Notebook
 
 
 ### Module 4:  Image Classification Notebook
 
-For this module, we'll work with an image classification example notebook.  Follow these steps:
+For this module, we'll work with an image classification example notebook. In particular, we'll use SageMaker's image classification algorithm, which is a supervised learning algorithm that takes an image as input and classifies it into one of multiple output categories. It uses a convolutional neural network (ResNet) that can be trained from scratch, or trained using transfer learning when a large number of training images are not available. Even if you don't have experience with neural networks or image classification, SageMaker's image classification algorithm makes the technology easy to use with no need to design and setup your own neural network.  
 
-- In your notebook instance, click the 'New' button on the right and select 'Folder'.  
-- Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'image-classification'.
-- Click the folder to enter it.
-- To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
-- You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
+Follow these steps:
+
+1. In your notebook instance, click the 'New' button on the right and select 'Folder'.  
+2. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'image-classification'.
+3. Click the folder to enter it.
+4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
+
+### Cleanup Guide
+
+To avoid charges for resources you no longer need when you're done with this workshop, you can delete them or, in the case of your notebook instance, stop them.  Here are the resources you should consider:
+
+- Endpoints:  these are the clusters of one or more instances serving inferences from your models. If you did not delete them from within the notebooks, you can delete them via the SageMaker console.  To do so, click the 'Endpoints' link in the left panel.  Then, for each endpoint, click the radio button next to it, then select 'Delete' from the 'Actions' drop down menu. You can follow a similar procedure to delete the related Models and Endpoint configurations.
+
+- Notebook instance:  you have two options if you do not want to keep the notebook instance running. If you would like to save it for later, you can stop rather than deleting it. To delete it, click the 'Notebook instances' link in the left panel. Next, click the radio button next to the notebook instance created for this workshop, then select 'Delete' from the 'Actions' drop down menu. To simply stop it instead, just click the 'Stop' link.  After it is stopped, you can start it again by clicking the 'Start' link.  Keep in mind that if you stop rather than delete it, you will be charged for the storage associated with it.  
+
+
+
+
+
 
 
