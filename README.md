@@ -12,16 +12,16 @@ Some of the resources you will launch as part of this workshop are eligible for 
 
 ### Browser
 
-We recommend you use the latest version of Chrome to complete this workshop.
+We recommend you use the latest version of Chrome or Firefox to complete this workshop.
 
 ## Modules
 
 This workshop is broken up into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
 
 1. Creating a Notebook Instance
-2. Notebook 1:  Video Game Sales
-2. NOTEBOOK 2
-3. NOTEBOOK 3
+2. Video Game Sales Notebook
+3. Stock Price Prediction Notebook
+4. TBD Notebook 
 
 After you have completed the workshop you can delete all of the resources that were created by following the instructions at the end of each notebook ( NOTE:  SHOULD WE PROVIDE A CLEANUP GUIDE INSTEAD? ). 
 
@@ -37,8 +37,10 @@ In this module, we'll work our way through an example Jupyter notebook that demo
 - To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 - You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
+### Module 3:  Stock Price Prediction Notebook
 
 
+### Module 4:  TBD Notebook
 
 
 
