@@ -29,7 +29,7 @@ After you have completed the workshop you can delete all of the resources that w
 
 In this module we will start by creating a Jupyter notebook instance in SageMaker where we will run the following two modules.
 
-####Launching a Jupyter Notebook Server using Amazon SageMaker
+#### Launching a Jupyter Notebook Server using Amazon SageMaker
 1. Sign into the AWS Management Console https://console.aws.amazon.com/.
 2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. SageMaker is available today in N. Virginia, Ohio, Oregon, and Ireland please select from one of these regions.
 3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
@@ -47,7 +47,7 @@ In this module we will start by creating a Jupyter notebook instance in SageMake
 
 7. You will be taken back to the Create Notebook instance page, click Create notebook instance. This will launch a p2.xlarge instance running the Amazon Deep Learning AMI.
 
-####Accessing the Jupyter Notebook Instance
+#### Accessing the Jupyter Notebook Instance
 
 1. Wait for the server status to say InService. This will take a few minutes.
 
