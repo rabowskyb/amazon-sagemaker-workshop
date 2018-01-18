@@ -38,12 +38,12 @@ In this module we will start by creating a SageMaker notebook instance which we 
 
 4. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
 
-![Notebook Instances](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture2.png)
+![Notebook Instances](/images/Picture2.png)
 
 5. Type [First Name]-[Last Name]-Lab-Server into the Notebook instance name text box, and select ml.p2.xlarge for the Notebook instance type.
 6. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
 
-![Create IAM role](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture3.png)
+![Create IAM role](/images/Picture3.png)
 
 7. You will be taken back to the Create Notebook instance page, click Create notebook instance.
 
@@ -51,11 +51,11 @@ In this module we will start by creating a SageMaker notebook instance which we 
 
 1. Wait for the server status to say InService. This will take a few minutes.
 
-![Access Notebook](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture4.png)
+![Access Notebook](/images/Picture4.png)
 
 2. Click Open. You will now see the Jupyter homepage for your notebook instance.
 
-![Open Notebook](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture5.png)
+![Open Notebook](/images/Picture5.png)
 
 
 ### Module 2:  Video Game Sales Notebook
