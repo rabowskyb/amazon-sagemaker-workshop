@@ -18,7 +18,7 @@ We recommend you use the latest version of Chrome or Firefox to complete this wo
 
 This workshop is divided into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
 
-[1. Creating a Notebook Instance] (#creating-a-notebook-instance)
+1. [Creating a Notebook Instance] (#creating-a-notebook-instance)
 2. Video Game Sales Notebook
 3. Stock Price Prediction Notebook
 4. Image Classification Notebook 
