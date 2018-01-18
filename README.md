@@ -34,7 +34,7 @@ In this module we will start by creating a SageMaker notebook instance which we 
 2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
 3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
 
-![Services in Console](https://github.com/rabowskyb/amazon-sagemaker-workshop/blob/master/images/Picture1.png)
+![Services in Console](/images/Picture1.png)
 
 4. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
 
