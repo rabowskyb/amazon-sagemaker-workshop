@@ -1,6 +1,6 @@
 # Amazon SageMaker Workshop
 
-Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured and unstructured data.  If possible, please complete Module 1, Creating a Notebook Instance, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured data (e.g. from CSV flat files) and unstructured data (e.g. images).  If possible, please complete Module 1, *'Creating a Notebook Instance'*, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
 
 ## Prerequisites
 
@@ -9,6 +9,10 @@ Amazon SageMaker is a fully-managed service that enables developers and data sci
 In order to complete this workshop you'll need an AWS Account with access to create AWS IAM, S3 and SageMaker resources. The code and instructions in this workshop assume only one student is using a given AWS account at a time. If you try sharing an account with another student, you'll run into naming conflicts for certain resources. You can work around these by appending a unique suffix to the resources that fail to create due to conflicts, but the instructions do not provide details on the changes required to make this work.
 
 Some of the resources you will launch as part of this workshop are eligible for the AWS free tier if your account is less than 12 months old. See the [AWS Free Tier page](https://aws.amazon.com/free/) for more details.  We are also providing a credit for the workshop.
+
+### AWS Region
+
+SageMaker is not available in all AWS Regions at this time.  We recommend running this workshop in either the Oregon or N. Virginia AWS Regions.
 
 ### Browser
 
@@ -23,7 +27,7 @@ This workshop is divided into multiple modules. Module 1 must be completed first
 3. Stock Price Prediction Notebook
 4. Image Classification Notebook 
 
-After you have completed the workshop you can delete all of the resources that were created by following the Cleanup Guide provided with this lab guide. 
+After you have completed the workshop, you can delete all of the resources that were created by following the Cleanup Guide provided with this lab guide. 
 
 ### Module 1:  Creating a Notebook Instance
 
@@ -45,7 +49,7 @@ In this module we will start by creating a SageMaker notebook instance which we 
 
 ![Create IAM role](/images/Picture3.png)
 
-7. You will be taken back to the Create Notebook instance page, click Create notebook instance.
+7. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
 
 #### Accessing the Notebook Instance
 
@@ -60,7 +64,7 @@ In this module we will start by creating a SageMaker notebook instance which we 
 
 ### Module 2:  Video Game Sales Notebook
 
-In this module, we'll work our way through an example Jupyter notebook that demonstrates how to use an Amazon-provided algorithm in SageMaker. More specifically, we'll use SageMaker's version of XGBoost, a popular and efficient open-source implementation of the gradient boosted trees algorithm. Gradient boosting is a supervised learning algorithm that attempts to predict a target variable by combining the estimates of a set of simpler, weaker models. XGBoost has done remarkably well in machine learning competitions because it robustly handles a variety of data types, relationships, and distributions. It often is useful, go-to algorithm in working with structured data, such as might be found in relational databases and flat files. 
+In this module, we'll work our way through an example Jupyter notebook that demonstrates how to use an Amazon-provided algorithm in SageMaker. More specifically, we'll use SageMaker's version of XGBoost, a popular and efficient open-source implementation of the gradient boosted trees algorithm. Gradient boosting is a supervised learning algorithm that attempts to predict a target variable by combining the estimates of a set of simpler, weaker models. XGBoost has done remarkably well in machine learning competitions because it robustly handles a wide variety of data types, relationships, and distributions. It often is a useful, go-to algorithm in working with structured data, such as data that might be found in relational databases and flat files. 
 
 To begin, follow these steps:
 
@@ -76,7 +80,7 @@ To begin, follow these steps:
 
 ### Module 4:  Image Classification Notebook
 
-For this module, we'll work with an image classification example notebook. In particular, we'll use SageMaker's image classification algorithm, which is a supervised learning algorithm that takes an image as input and classifies it into one of multiple output categories. It uses a convolutional neural network (ResNet) that can be trained from scratch, or trained using transfer learning when a large number of training images are not available. Even if you don't have experience with neural networks or image classification, SageMaker's image classification algorithm makes the technology easy to use with no need to design and setup your own neural network.  
+For this module, we'll work with an image classification example notebook. In particular, we'll use SageMaker's image classification algorithm, which is a supervised learning algorithm that takes an image as input and classifies it into one of multiple output categories. It uses a convolutional neural network (ResNet) that can be trained from scratch, or trained using transfer learning when a large number of training images are not available. Even if you don't have experience with neural networks or image classification, SageMaker's image classification algorithm makes the technology easy to use, with no need to design and setup your own neural network.  
 
 Follow these steps:
 
@@ -85,6 +89,7 @@ Follow these steps:
 3. Click the folder to enter it.
 4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
+6. NOTE:  training the model for this example may take up to 10 minutes.  However, keep in mind that this is relatively short because transfer learning is used rather than training from scratch, which could take many hours.  
 
 ### Cleanup Guide
 
