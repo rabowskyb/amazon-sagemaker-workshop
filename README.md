@@ -75,8 +75,16 @@ To begin, follow these steps:
 5. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 6. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
-### Module 3:  Stock Price Prediction Notebook
+### Module 3:  Distributed Training with TensorFlow Notebook
 
+In this module we will be using images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/) to demonstrate how to perform distributed training using SageMaker. Using a model based on the [TensorFlow MNIST Example](https://github.com/tensorflow/models/tree/master/official/mnist) we will demonstrate how to use a Jupyter notebook to create your own script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint. The model will predict what the handwritten digit is in the image presented for prediction.
+
+1. In your notebook instance, click the 'New' button on the right and select 'Folder'.
+2. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'tensorflow-distributed'.
+3. Click the folder to enter it.
+4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'TensorFlow_Distributed_MNIST.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
+6. NOTE:  training the model for this example may take up to 10 minutes.
 
 ### Module 4:  Image Classification Notebook
 
