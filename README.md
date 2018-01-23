@@ -1,6 +1,6 @@
 # Amazon SageMaker Workshop
 
-Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured data (e.g. from CSV flat files) and unstructured data (e.g. images).  If possible, please complete Module 1, *'Creating a Notebook Instance'*, right away when the workshop begins before the introduction presentation, so your notebook instance will be ready when the presentation ends and the hands on portion of the workshop starts.  
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  Along the way you'll see how machine learning can be applied to both structured data (e.g. from CSV flat files) and unstructured data (e.g. images).  
 
 ## Prerequisites
 
@@ -8,11 +8,11 @@ Amazon SageMaker is a fully-managed service that enables developers and data sci
 
 In order to complete this workshop you'll need an AWS Account with access to create AWS IAM, S3 and SageMaker resources. The code and instructions in this workshop assume only one student is using a given AWS account at a time. If you try sharing an account with another student, you'll run into naming conflicts for certain resources. You can work around these by appending a unique suffix to the resources that fail to create due to conflicts, but the instructions do not provide details on the changes required to make this work.
 
-Some of the resources you will launch as part of this workshop are eligible for the AWS free tier if your account is less than 12 months old. See the [AWS Free Tier page](https://aws.amazon.com/free/) for more details.  We are also providing a credit for the workshop.
+Some of the resources you will launch as part of this workshop are eligible for the AWS free tier if your account is less than 12 months old. See the [AWS Free Tier page](https://aws.amazon.com/free/) for more details.  We are also providing a credit for the workshop if you attend the scheduled workshop sessions in the AWS Pop-up Lofts in San Francisco or New York.
 
 ### AWS Region
 
-SageMaker is not available in all AWS Regions at this time.  We recommend running this workshop in either the Oregon or N. Virginia AWS Regions.
+SageMaker is not available in all AWS Regions at this time.  We recommend running this workshop in either of the following AWS Regions:  Oregon or N. Virginia.
 
 ### Browser
 
@@ -20,18 +20,20 @@ We recommend you use the latest version of Chrome or Firefox to complete this wo
 
 ## Modules
 
-This workshop is divided into multiple modules. Module 1 must be completed first.  We recommend you complete the other modules in order, however, you are welcome to skip ahead.  
+This workshop is divided into multiple modules. Module 1 must be completed first, followed by Module 2.  You can complete the other modules (Modules 3 and 4) in any order.  
 
 1. Creating a Notebook Instance
 2. Video Game Sales Notebook
-3. Stock Price Prediction Notebook
+3. Distributed Training with TensorFlow Notebook
 4. Image Classification Notebook 
+
+Be patient as you work your way through the notebook-based modules. After you run a cell in a notebook, it may take several seconds for the code to show results. For the cells that start training jobs, it may take several minutes. In particular, the last two modules have training jobs that may last up to 10 minutes.  
 
 After you have completed the workshop, you can delete all of the resources that were created by following the Cleanup Guide provided with this lab guide. 
 
 ### Module 1:  Creating a Notebook Instance
 
-In this module we will start by creating a SageMaker notebook instance which we will use to run the following modules.
+In this module we will start by creating a SageMaker notebook instance, which we will use to run the other workshop modules.
 
 #### Launching the Notebook Instance
 1. Sign into the AWS Management Console https://console.aws.amazon.com/.
@@ -77,7 +79,7 @@ To begin, follow these steps:
 
 ### Module 3:  Distributed Training with TensorFlow Notebook
 
-In this module we will be using images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/) to demonstrate how to perform distributed training using SageMaker. Using a convolutional neural network model based on the [TensorFlow MNIST Example](https://github.com/tensorflow/models/tree/master/official/mnist) we will demonstrate how to use a Jupyter notebook and the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) to create your own script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint. The model will predict what the handwritten digit is in the image presented for prediction.
+In this module we will be using images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/) to demonstrate how to perform distributed training using SageMaker. Using a convolutional neural network model based on the [TensorFlow MNIST Example](https://github.com/tensorflow/models/tree/master/official/mnist), we will demonstrate how to use a Jupyter notebook and the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) to create your own script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint. The model will predict what the handwritten digit is in the image presented for prediction. Besides demonstrating a "bring your own script" for TensorFlow use case, the example also showcases how easy it is to set up a cluster of multiple instances for model training in SageMaker.
 
 1. In your notebook instance, click the 'New' button on the right and select 'Folder'.
 2. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'tensorflow-distributed'.
@@ -88,7 +90,7 @@ In this module we will be using images of handwritten digits from the [MNIST Dat
 
 ### Module 4:  Image Classification Notebook
 
-For this module, we'll work with an image classification example notebook. In particular, we'll use SageMaker's image classification algorithm, which is a supervised learning algorithm that takes an image as input and classifies it into one of multiple output categories. It uses a convolutional neural network (ResNet) that can be trained from scratch, or trained using transfer learning when a large number of training images are not available. Even if you don't have experience with neural networks or image classification, SageMaker's image classification algorithm makes the technology easy to use, with no need to design and setup your own neural network.  
+For this module, we'll work with an image classification example notebook. In particular, we'll use SageMaker's image classification algorithm, which is a supervised learning algorithm that takes an image as input and classifies it into one of multiple output categories. It uses a convolutional neural network (ResNet) that can be trained from scratch, or trained using transfer learning when a large number of training images are not available. Even if you don't have experience with neural networks or image classification, SageMaker's image classification algorithm makes the technology easy to use, with no need to design and set up your own neural network.  
 
 Follow these steps:
 
