@@ -41,7 +41,7 @@ After you have completed the workshop, you can delete all of the resources that 
 
 In this module we'll start by creating an Amazon S3 bucket.  We'll then create a SageMaker notebook instance, which we will use to run the other workshop modules.
 
-### Create a S3 Bucket
+### 1. Create a S3 Bucket
 
 SageMaker typically uses S3 as storage for data and model artifacts.  In this step you'll create a S3 bucket for this purpose.
 
@@ -64,7 +64,7 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 </p></details>
 
-### Launching the Notebook Instance
+### 2. Launching the Notebook Instance
 
 1. Sign into the AWS Management Console https://console.aws.amazon.com/.
 
@@ -86,7 +86,7 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 1. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
 
-#### Accessing the Notebook Instance
+### 3. Accessing the Notebook Instance
 
 1. Wait for the server status to say InService. This will take a few minutes.
 
