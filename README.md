@@ -16,6 +16,10 @@ Some of the resources you will launch as part of this workshop are eligible for 
 
 SageMaker is not available in all AWS Regions at this time.  We recommend running this workshop in either of the following AWS Regions:  Oregon or N. Virginia.
 
+Once you've chosen a region, you should deploy all of the resources for this workshop there. Make sure you select your region from the dropdown in the upper right corner of the AWS Console before getting started.
+
+![Region selection screenshot](/images/region-selection.png)
+
 ### Browser
 
 We recommend you use the latest version of Chrome or Firefox to complete this workshop.
