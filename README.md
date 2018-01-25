@@ -48,7 +48,8 @@ In this module we will start by creating a SageMaker notebook instance, which we
 
 ![Notebook Instances](/images/Picture2.png)
 
-5. Type [First Name]-[Last Name]-Lab-Server into the Notebook instance name text box, and select ml.p2.xlarge for the Notebook instance type.
+5. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
+
 6. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
 
 ![Create IAM role](/images/Picture3.png)
