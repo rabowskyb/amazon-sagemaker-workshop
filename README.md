@@ -39,7 +39,7 @@ After you have completed the workshop, you can delete all of the resources that 
 
 ## Module 1:  Creating a Notebook Instance
 
-In this module we'll start by creating an Amazon S3 bucket.  We'll then create a SageMaker notebook instance, which we will use to run the other workshop modules.
+In this module we'll start by creating an Amazon S3 bucket that will be used throughout the workshop.  We'll then create a SageMaker notebook instance, which we will use to run the other workshop modules.
 
 ### 1. Create a S3 Bucket
 
@@ -68,23 +68,23 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 1. Sign into the AWS Management Console https://console.aws.amazon.com/.
 
-1. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
+2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
 
-1. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
+3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
 
 ![Services in Console](/images/Picture1.png)
 
-1. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
+4. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
 
 ![Notebook Instances](/images/Picture2.png)
 
-1. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
+5. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
 
-1. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
+6. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
 
 ![Create IAM role](/images/Picture3.png)
 
-1. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
+7. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
 
 ### 3. Accessing the Notebook Instance
 
@@ -92,7 +92,7 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 ![Access Notebook](/images/Picture4.png)
 
-1. Click Open. You will now see the Jupyter homepage for your notebook instance.
+2. Click Open. You will now see the Jupyter homepage for your notebook instance.
 
 ![Open Notebook](/images/Picture5.png)
 
