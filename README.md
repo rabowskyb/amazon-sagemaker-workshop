@@ -109,7 +109,20 @@ To begin, follow these steps:
 4. Click the folder to enter it.
 5. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 6. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
-7. NOTE:  training the model for this example typically takes about 5 minutes.
+7. If you are familiar with Jupyter notebooks, you can skip this step.  Otherwise, please expand the instructions below.
+
+<details>
+<summary><strong>Jupyter notebook instructions (expand for details)</strong></summary><p>
+
+1. Jupyter notebooks tell a story by combining explanatory text and code. There are two types of "cells" in a notebook:  code cells, and "markdown" cells with explanatory text.  
+
+1. You will be running the code cells.  These are distinguished by having "In" next to them in the left margin next to the cell, and a greyish background.  Markdown cells lack "In" and have a white background.
+
+1. To run a code cell, simply click in it, then either click the **Run Cell** button in the notebook's toolbar, or use Control+Enter from your computer's keyboard.  
+
+</p></details>
+
+8. NOTE:  training the model for this example typically takes about 5 minutes.
 
 ## Module 3:  Distributed Training with TensorFlow Notebook
 
