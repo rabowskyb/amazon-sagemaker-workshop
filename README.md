@@ -108,8 +108,9 @@ To begin, follow these steps:
 3. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'video-game-sales'.
 4. Click the folder to enter it.
 5. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
-6. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
-7. If you are familiar with Jupyter notebooks, you can skip this step.  Otherwise, please expand the instructions below.
+6. You are now ready to begin the notebook:  click the notebook's file name to open it.
+7. In the ```bucket = '<your_s3_bucket_name_here>'``` code line, paste the name of the S3 bucket you created in Module 1 to replace ```<your_s3_bucket_name_here>```.  The code line should now read similar to ```bucket = 'smworkshop-john-smith'```.  Do NOT paste the entire path (s3://.......), just the bucket name.  
+8. If you are familiar with Jupyter notebooks, you can skip this step.  Otherwise, please expand the instructions below.
 
 <details>
 <summary><strong>Jupyter notebook instructions (expand for details)</strong></summary><p>
