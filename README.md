@@ -120,9 +120,12 @@ To begin, follow these steps:
 
 1. To run a code cell, simply click in it, then either click the **Run Cell** button in the notebook's toolbar, or use Control+Enter from your computer's keyboard.  
 
+1. It may take a few seconds to a few minutes for a code cell to run.  Please run each code cell in order, and only once, to avoid repeated operations.  For example, running the same training job cell twice might create two training jobs, possibly exceeding your service limits.
+
 </p></details>
 
-8. NOTE:  training the model for this example typically takes about 5 minutes.
+<p><strong>NOTE:  training the model for this example typically takes about 5 minutes.</strong></p>
+
 
 ## Module 3:  Distributed Training with TensorFlow Notebook
 
@@ -133,7 +136,8 @@ In this module we will be using images of handwritten digits from the [MNIST Dat
 3. Click the folder to enter it.
 4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'TensorFlow_Distributed_MNIST.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
-6. NOTE:  training the model for this example typically takes about 8 minutes.
+
+<p><strong>NOTE:  training the model for this example typically takes about 8 minutes.</strong></p>
 
 ## Module 4:  Image Classification Notebook
 
@@ -146,7 +150,8 @@ Follow these steps:
 3. Click the folder to enter it.
 4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
 5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
-6. NOTE:  training the model for this example typically takes about 10 minutes.  However, keep in mind that this is relatively short because transfer learning is used rather than training from scratch, which could take many hours.  
+
+<p><strong>NOTE:  training the model for this example typically takes about 10 minutes.</strong> However, keep in mind that this is relatively short because transfer learning is used rather than training from scratch, which could take many hours.</p>
 
 ## Cleanup Guide
 
