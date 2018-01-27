@@ -43,7 +43,7 @@ In this module we'll start by creating an Amazon S3 bucket that will be used thr
 
 ### 1. Create a S3 Bucket
 
-SageMaker typically uses S3 as storage for data and model artifacts.  In this step you'll create a S3 bucket for this purpose.
+SageMaker typically uses S3 as storage for data and model artifacts.  In this step you'll create a S3 bucket for this purpose. To begin, sign into the AWS Management Console, https://console.aws.amazon.com/.
 
 #### High-Level Instructions
 
@@ -66,25 +66,25 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 ### 2. Launching the Notebook Instance
 
-1. Sign into the AWS Management Console https://console.aws.amazon.com/.
+1. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
 
-2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. Select either Oregon or N. Virginia.
-
-3. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
+2. Click on Amazon SageMaker from the list of all services.  This will bring you to the Amazon SageMaker console homepage.
 
 ![Services in Console](/images/Picture1.png)
 
-4. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
+3. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
 
 ![Notebook Instances](/images/Picture2.png)
 
-5. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
+4. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
 
-6. In the resulting modal popup, choose 'Create a new role', and select 'None' under the S3 Buckets you specify – optional. Click and Create role.
+![Create Notebook Instance](/images/create-instance.png)
 
-![Create IAM role](/images/Picture3.png)
+5. For IAM role, choose 'Create a new role', and in the resulting pop-up modal, select 'Specific S3 buckets' under 'S3 Buckets you specify – optional'. In the text field, paste the name of the S3 bucket you created above.  It should look similar to ```smworkshop-john-smith```. Click 'Create role'.
 
-7. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
+![Create IAM role](/images/create-iam-role.png)
+
+6. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
 
 ### 3. Accessing the Notebook Instance
 
