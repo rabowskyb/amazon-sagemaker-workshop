@@ -72,27 +72,27 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 ![Services in Console](/images/Picture1.png)
 
-3. To create a new notebook instance, go to 'Notebook instances', and click the 'Create notebook instance' button at the top of the browser window.
+3. To create a new notebook instance, go to **Notebook instances**, and click the **Create notebook instance** button at the top of the browser window.
 
 ![Notebook Instances](/images/Picture2.png)
 
-4. Type [First Name]-[Last Name]-workshop into the Notebook instance name text box, and select ml.m4.xlarge for the Notebook instance type.
+4. Type [First Name]-[Last Name]-workshop into the **Notebook instance name** text box, and select ml.m4.xlarge for the **Notebook instance type**.
 
 ![Create Notebook Instance](/images/create-instance.png)
 
-5. For IAM role, choose 'Create a new role', and in the resulting pop-up modal, select 'Specific S3 buckets' under 'S3 Buckets you specify – optional'. In the text field, paste the name of the S3 bucket you created above.  It should look similar to ```smworkshop-john-smith```. Click 'Create role'.
+5. For IAM role, choose **Create a new role**, and in the resulting pop-up modal, select **Specific S3 buckets** under **S3 Buckets you specify – optional**. In the text field, paste the name of the S3 bucket you created above.  It should look similar to ```smworkshop-john-smith```. Click **Create role**.
 
 ![Create IAM role](/images/create-iam-role.png)
 
-6. You will be taken back to the Create Notebook instance page, click 'Create notebook instance'.
+6. You will be taken back to the Create Notebook instance page.  Click **Create notebook instance**.
 
 ### 3. Accessing the Notebook Instance
 
-1. Wait for the server status to say InService. This will take a few minutes.
+1. Wait for the server status to change to **InService**. This will take a few minutes.
 
 ![Access Notebook](/images/Picture4.png)
 
-2. Click Open. You will now see the Jupyter homepage for your notebook instance.
+2. Click **Open**. You will now see the Jupyter homepage for your notebook instance.
 
 ![Open Notebook](/images/Picture5.png)
 
@@ -103,11 +103,11 @@ In this module, we'll work our way through an example Jupyter notebook that demo
 
 To begin, follow these steps:
 
-1. Download this repository to your computer by clicking 'Clone or download' then 'Download ZIP'.
-2. In your notebook instance, click the 'New' button on the right and select 'Folder'.  
-3. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'video-game-sales'.
+1. Download this repository to your computer by clicking the green **Clone or download**  button from the upper right of this page, then **Download ZIP**.
+2. In your notebook instance, click the **New** button on the right and select **Folder**.  
+3. Click the checkbox next to your new folder, click the **Rename** button above in the menu bar, and give the folder a name such as 'video-game-sales'.
 4. Click the folder to enter it.
-5. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+5. To upload the notebook, click the **Upload** button on the right, then in the file selection popup, select the file 'video-game-sales.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue **Upload** button that appears in the notebook next to the file name.
 6. You are now ready to begin the notebook:  click the notebook's file name to open it.
 7. In the ```bucket = '<your_s3_bucket_name_here>'``` code line, paste the name of the S3 bucket you created in Module 1 to replace ```<your_s3_bucket_name_here>```.  The code line should now read similar to ```bucket = 'smworkshop-john-smith'```.  Do NOT paste the entire path (s3://.......), just the bucket name.  
 8. If you are familiar with Jupyter notebooks, you can skip this step.  Otherwise, please expand the instructions below.
@@ -132,10 +132,10 @@ To begin, follow these steps:
 
 In this module we will be using images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/) to demonstrate how to perform distributed training using SageMaker. Using a convolutional neural network model based on the [TensorFlow MNIST Example](https://github.com/tensorflow/models/tree/master/official/mnist), we will demonstrate how to use a Jupyter notebook and the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) to create your own script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint. The model will predict what the handwritten digit is in the image presented for prediction. Besides demonstrating a "bring your own script" for TensorFlow use case, the example also showcases how easy it is to set up a cluster of multiple instances for model training in SageMaker.
 
-1. In your notebook instance, click the 'New' button on the right and select 'Folder'.
-2. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'tensorflow-distributed'.
+1. In your notebook instance, click the **New** button on the right and select **Folder**.
+2. Click the checkbox next to your new folder, click the **Rename** button above in the menu bar, and give the folder a name such as 'tensorflow-distributed'.
 3. Click the folder to enter it.
-4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'TensorFlow_Distributed_MNIST.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+4. To upload the notebook, click the **Upload** button on the right, then in the file selection popup, select the file 'TensorFlow_Distributed_MNIST.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue **Upload** button that appears in the notebook next to the file name.
 5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
 <p><strong>NOTE:  training the model for this example typically takes about 8 minutes.</strong></p>
@@ -146,10 +146,10 @@ For this module, we'll work with an image classification example notebook. In pa
 
 Follow these steps:
 
-1. In your notebook instance, click the 'New' button on the right and select 'Folder'.  
-2. Click the checkbox next to your new folder, click the 'Rename' button above in the menu bar, and give the folder a name such as 'image-classification'.
+1. In your notebook instance, click the **New** button on the right and select **Folder**.  
+2. Click the checkbox next to your new folder, click the **Rename** button above in the menu bar, and give the folder a name such as 'image-classification'.
 3. Click the folder to enter it.
-4. To upload the notebook, click the 'Upload' button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue 'Upload' button that appears in the notebook next to the file name.
+4. To upload the notebook, click the **Upload** button on the right, then in the file selection popup, select the file 'Image-classification-transfer-learning.ipynb' from the folder on your computer where you downloaded this GitHub repository. Then click the blue **Upload** button that appears in the notebook next to the file name.
 5. You are now ready to begin the notebook:  click the notebook's file name to open it, then follow the directions in the notebook.
 
 <p><strong>NOTE:  training the model for this example typically takes about 10 minutes.</strong> However, keep in mind that this is relatively short because transfer learning is used rather than training from scratch, which could take many hours.</p>
@@ -158,9 +158,9 @@ Follow these steps:
 
 To avoid charges for resources you no longer need when you're done with this workshop, you can delete them or, in the case of your notebook instance, stop them.  Here are the resources you should consider:
 
-- Endpoints:  these are the clusters of one or more instances serving inferences from your models. If you did not delete them from within the notebooks, you can delete them via the SageMaker console.  To do so, click the 'Endpoints' link in the left panel.  Then, for each endpoint, click the radio button next to it, then select 'Delete' from the 'Actions' drop down menu. You can follow a similar procedure to delete the related Models and Endpoint configurations.
+- Endpoints:  these are the clusters of one or more instances serving inferences from your models. If you did not delete them from within the notebooks, you can delete them via the SageMaker console.  To do so, click the **Endpoints** link in the left panel.  Then, for each endpoint, click the radio button next to it, then select **Delete** from the **Actions** drop down menu. You can follow a similar procedure to delete the related Models and Endpoint configurations.
 
-- Notebook instance:  you have two options if you do not want to keep the notebook instance running. If you would like to save it for later, you can stop rather than deleting it. To delete it, click the 'Notebook instances' link in the left panel. Next, click the radio button next to the notebook instance created for this workshop, then select 'Delete' from the 'Actions' drop down menu. To simply stop it instead, just click the 'Stop' link.  After it is stopped, you can start it again by clicking the 'Start' link.  Keep in mind that if you stop rather than delete it, you will be charged for the storage associated with it.  
+- Notebook instance:  you have two options if you do not want to keep the notebook instance running. If you would like to save it for later, you can stop rather than deleting it. To delete it, click the **Notebook instances** link in the left panel. Next, click the radio button next to the notebook instance created for this workshop, then select **Delete** from the **Actions** drop down menu. To simply stop it instead, just click the **Stop** link.  After it is stopped, you can start it again by clicking the **Start** link.  Keep in mind that if you stop rather than delete it, you will be charged for the storage associated with it.  
 
 
 
