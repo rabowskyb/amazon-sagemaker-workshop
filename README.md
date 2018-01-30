@@ -1,6 +1,6 @@
 # Amazon SageMaker Workshop
 
-## NOTE:  this workshop is now maintained in another repository, in [AWS Labs Amazon SageMaker Workshop](https://github.com/awslabs/amazon-sagemaker-workshop)
+## NOTE:  this workshop is now maintained in another repository, [AWS Labs Amazon SageMaker Workshop](https://github.com/awslabs/amazon-sagemaker-workshop)
 
 Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. In this workshop, you'll create a SageMaker notebook instance and work through sample Jupyter notebooks that demonstrate some of the many features of SageMaker.  For example, you'll create model training jobs using SageMaker's hosted training feature, and create endpoints to serve predictions from your models using SageMaker's hosted endpoint feature. Along the way you'll see how machine learning can be applied to both structured data (e.g. from CSV flat files) and unstructured data (e.g. images).  
 
